@@ -1,7 +1,5 @@
 # TriviaApp
 
-![Trivia App](app_screenshot.png)
-
 The Trivia app is an Android application developed in Kotlin that offers an engaging trivia experience for users. It features timed quizzes, multiple-choice questions, a RecyclerView for smooth scrolling, and a captivating splash screen.
 
 ## Features
