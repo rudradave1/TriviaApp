@@ -37,7 +37,3 @@ Follow the instructions below to get a copy of the project up and running on you
 ## Contribution
 
 Contributions to the Trivia app project are welcome. If you find any issues or want to enhance the app with new features, feel free to submit a pull request.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
