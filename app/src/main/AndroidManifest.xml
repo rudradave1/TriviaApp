@@ -10,7 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TriviaApp">
         <activity android:name=".activities.TriviaListActivity" />
-        <activity android:name=".activities.SplashScreenActivity">
+        <activity
+            android:name=".activities.SplashScreenActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
