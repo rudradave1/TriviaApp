@@ -50,7 +50,7 @@ class DatabaseHandler(context: Context?) :
             val list:ArrayList<Trivia> = ArrayList<Trivia>()
             val selectQuery = "SELECT  * FROM $TABLE_NAME"
             val db = this.readableDatabase
-            var cursor: Cursor? = null
+            val cursor: Cursor?
             try{
                 cursor = db.rawQuery(selectQuery, null)
             } catch (e: SQLiteException) {
@@ -64,13 +64,15 @@ class DatabaseHandler(context: Context?) :
             var time: String
             if (cursor.moveToFirst()) {
                 do {
-                    userId = cursor.getInt(cursor.getColumnIndex(KEY_ID))
-                    name = cursor.getString(cursor.getColumnIndex(KEY_NAME))
-                    a1 = cursor.getString(cursor.getColumnIndex(KEY_ANSWER1))
-                    a2 = cursor.getString(cursor.getColumnIndex(KEY_ANSWER2))
-                    time = cursor.getString(cursor.getColumnIndex(KEY_TIME))
-                    val model = Trivia(userId.toString(), name, a1, a2, time)
-                    list.add(model)
+                    if (cursor.getColumnIndex(KEY_ID) >= 0) {
+                        userId = cursor.getInt(cursor.getColumnIndex(KEY_ID))
+                        name = cursor.getString(cursor.getColumnIndex(KEY_NAME))
+                        a1 = cursor.getString(cursor.getColumnIndex(KEY_ANSWER1))
+                        a2 = cursor.getString(cursor.getColumnIndex(KEY_ANSWER2))
+                        time = cursor.getString(cursor.getColumnIndex(KEY_TIME))
+                        val model = Trivia(userId.toString(), name, a1, a2, time)
+                        list.add(model)
+                    }
                 } while (cursor.moveToNext())
             }
             cursor.close()
