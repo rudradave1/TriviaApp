@@ -25,69 +25,78 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <TextView
                         android:id="@+id/questionTextView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/question2"
-                        android:textSize="18sp"
                         android:padding="8dp"
+                        android:text="@string/question2"
                         android:textAlignment="center"
-                        android:textColor="@color/white"/>
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        tools:ignore="TextContrastCheck" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <CheckBox
                 android:id="@+id/checkbox1"
-                android:layout_width="0dp"
+                android:layout_width="320dp"
                 android:layout_height="wrap_content"
-                android:text="White"
-                android:layout_marginTop="16dp"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
+                android:text="@string/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/questionCardView" />
+                app:layout_constraintTop_toBottomOf="@+id/questionCardView"
+                tools:ignore="TouchTargetSizeCheck" />
+
             <CheckBox
                 android:id="@+id/checkbox2"
-                android:layout_width="0dp"
+                android:layout_width="320dp"
                 android:layout_height="wrap_content"
-                android:text="Yellow"
-                android:layout_marginTop="16dp"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
+                android:text="@string/yellow"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/checkbox1" />
+                app:layout_constraintTop_toBottomOf="@+id/checkbox1"
+                tools:ignore="TouchTargetSizeCheck" />
+
             <CheckBox
                 android:id="@+id/checkbox3"
-                android:layout_width="0dp"
+                android:layout_width="320dp"
                 android:layout_height="wrap_content"
-                android:text="Orange"
-                android:layout_marginTop="16dp"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
+                android:text="@string/orange"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/checkbox2" />
+                app:layout_constraintTop_toBottomOf="@+id/checkbox2"
+                tools:ignore="TouchTargetSizeCheck" />
+
             <CheckBox
                 android:id="@+id/checkbox4"
-                android:layout_width="0dp"
+                android:layout_width="320dp"
                 android:layout_height="wrap_content"
-                android:text="Green"
-                android:layout_marginTop="16dp"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
+                android:text="@string/green"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/checkbox3" />
+                app:layout_constraintTop_toBottomOf="@+id/checkbox3"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <Button
                 android:id="@+id/nextButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/color_selector"
-                android:text="Next"
+                android:text="@string/next"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

@@ -13,10 +13,10 @@ class ListAdapter (private val context: Activity, private val id: Array<String>,
         val inflater = context.layoutInflater
         val rowView = inflater.inflate(R.layout.custom_list, null, true)
 
-        val nameTextView = rowView.findViewById(R.id.nameTextView) as TextView
-        val answer1TextView = rowView.findViewById(R.id.answer1TextView) as TextView
-        val answer2TextView = rowView.findViewById(R.id.answer2TextView) as TextView
-        val timeTextView = rowView.findViewById(R.id.timeTextView) as TextView
+        val nameTextView: TextView = rowView.findViewById(R.id.nameTextView)
+        val answer1TextView: TextView = rowView.findViewById(R.id.answer1TextView)
+        val answer2TextView: TextView = rowView.findViewById(R.id.answer2TextView)
+        val timeTextView: TextView = rowView.findViewById(R.id.timeTextView)
 
         nameTextView.text = name[position]
         answer1TextView.text = a1[position]

@@ -24,15 +24,17 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <TextView
                     android:id="@+id/questionTextView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/question1"
-                    android:textSize="18sp"
                     android:padding="8dp"
+                    android:text="@string/question1"
                     android:textAlignment="center"
-                    android:textColor="@color/white"/>
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    tools:ignore="TextContrastCheck" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -49,27 +51,31 @@
 
             <RadioButton
                 android:id="@+id/radioButton"
-                android:layout_width="match_parent"
+                android:layout_width="320dp"
                 android:layout_height="wrap_content"
-                android:text=" Sachin Tendulkar" />
+                android:text="@string/sachin_tendulkar"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <RadioButton
                 android:id="@+id/radioButton2"
-                android:layout_width="match_parent"
+                android:layout_width="320dp"
                 android:layout_height="wrap_content"
-                android:text="Virat Kolli" />
+                android:text="@string/virat_kolli"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <RadioButton
                 android:id="@+id/radioButton3"
-                android:layout_width="match_parent"
+                android:layout_width="320dp"
                 android:layout_height="wrap_content"
-                android:text="Adam Gilchirst" />
+                android:text="@string/adam_gilchirst"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <RadioButton
                 android:id="@+id/radioButton4"
-                android:layout_width="match_parent"
+                android:layout_width="320dp"
                 android:layout_height="wrap_content"
-                android:text="Jacques Kallis" />
+                android:text="@string/jacques_kallis"
+                tools:ignore="TouchTargetSizeCheck" />
 
         </RadioGroup>
 
@@ -78,7 +84,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/color_selector"
-            android:text="Next"
+            android:text="@string/next"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

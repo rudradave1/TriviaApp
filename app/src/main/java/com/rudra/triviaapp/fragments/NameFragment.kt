@@ -1,29 +1,26 @@
 package com.rudra.triviaapp.fragments
 
-import android.content.Intent
-import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import android.widget.Button
-import com.google.android.material.textfield.TextInputEditText
-import com.rudra.trivia.fragments.SingleChoiceFragment
-import com.rudra.triviaapp.R
-import com.rudra.triviaapp.activities.TriviaListActivity
+import android.content.*
+import android.os.*
+import android.view.*
+import android.widget.*
+import androidx.fragment.app.*
+import com.google.android.material.textfield.*
+import com.rudra.triviaapp.*
+import com.rudra.triviaapp.activities.*
 
 class NameFragment : Fragment() {
 
-    lateinit var mView: View
+    private lateinit var mView: View
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
+                              savedInstanceState: Bundle?): View {
         // Inflate the layout for this fragment
         mView = inflater.inflate(R.layout.fragment_name, container, false)
-        val nextButton = mView.findViewById(R.id.nextButton) as Button
-        val historyButton = mView.findViewById(R.id.historyButton) as Button
-        val nameEditText = mView.findViewById(R.id.nameEditText) as TextInputEditText
+        val nextButton: Button = mView.findViewById(R.id.nextButton)
+        val historyButton: Button = mView.findViewById(R.id.historyButton)
+        val nameEditText: TextInputEditText = mView.findViewById(R.id.nameEditText)
 
-        nextButton.setOnClickListener { view ->
+        nextButton.setOnClickListener { _ ->
             if (nameEditText.text?.isEmpty() != true) {
                 loadFragment(SingleChoiceFragment(), nameEditText.text.toString())
             } else {
@@ -31,7 +28,7 @@ class NameFragment : Fragment() {
             }
         }
 
-        historyButton.setOnClickListener { view ->
+        historyButton.setOnClickListener { _ ->
             val intent = Intent (activity, TriviaListActivity::class.java)
             activity?.startActivity(intent)
         }

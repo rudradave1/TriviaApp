@@ -1,31 +1,26 @@
-package com.rudra.trivia.fragments
+package com.rudra.triviaapp.fragments
 
-import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import android.widget.Button
-import android.widget.RadioButton
-import android.widget.RadioGroup
-import android.widget.Toast
-import com.rudra.triviaapp.R
-import com.rudra.triviaapp.fragments.MultipleChoiceFragment
+import android.os.*
+import android.view.*
+import android.widget.*
+import androidx.fragment.app.*
+import com.rudra.triviaapp.*
 
 class SingleChoiceFragment : Fragment() {
-    lateinit var mView: View
-    lateinit var radioButton: RadioButton
+    private lateinit var mView: View
+    private lateinit var radioButton: RadioButton
+    
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
+                              savedInstanceState: Bundle?): View {
         // Inflate the layout for this fragment
         mView = inflater.inflate(R.layout.fragment_single_choice, container, false)
-        val nextButton = mView.findViewById(R.id.nextButton) as Button
-        val radioGroup = mView.findViewById(R.id.radioGroup) as RadioGroup
+        val nextButton: Button = mView.findViewById(R.id.nextButton)
+        val radioGroup: RadioGroup = mView.findViewById(R.id.radioGroup)
 
         val args = arguments
         val name = args?.getString("name")
 
-        nextButton.setOnClickListener {view ->
+        nextButton.setOnClickListener {_ ->
             if (radioGroup.checkedRadioButtonId == -1)
             {
                 // no radio buttons are checked
