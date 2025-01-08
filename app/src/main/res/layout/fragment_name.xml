@@ -6,7 +6,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.NameFragment">
+    tools:context=".fragments.NameFragment"
+    tools:ignore="VisualLintBounds">
 
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
@@ -20,7 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:backgroundTint="@color/color_selector"
-        android:text="History"
+        android:text="@string/history"
         app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,15 +41,15 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/nameEditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_width="488dp"
+            android:layout_height="48dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/nextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Next"
+        android:text="@string/next"
         android:layout_marginTop="8dp"
         android:backgroundTint="@color/color_selector"
         app:layout_constraintEnd_toEndOf="parent"

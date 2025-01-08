@@ -24,7 +24,7 @@ class TriviaListActivity : AppCompatActivity() {
         val time = Array(list.size){"null"}
 
         for((index, e) in list.withIndex()){
-            id[index] = e.id.toString()
+            id[index] = e.id
             name[index] = e.name
             a1[index] = e.a1
             a2[index] = e.a2

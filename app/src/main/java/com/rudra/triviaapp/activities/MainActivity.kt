@@ -1,9 +1,9 @@
 package com.rudra.triviaapp.activities
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import com.rudra.triviaapp.fragments.NameFragment
-import com.rudra.triviaapp.R
+import android.os.*
+import androidx.appcompat.app.*
+import com.rudra.triviaapp.*
+import com.rudra.triviaapp.fragments.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,9 +14,5 @@ class MainActivity : AppCompatActivity() {
                 .replace(R.id.root_container, NameFragment())
                 .commitAllowingStateLoss()
         }
-    }
-
-    companion object {
-        private const val TAG = "MainActivity"
     }
 }

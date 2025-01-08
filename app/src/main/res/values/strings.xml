@@ -5,4 +5,27 @@
     <string name="ask_name">What is your name?</string>
     <string name="question1">Who is the best cricketer in the world?</string>
     <string name="question2">What are the colors in the Indian national flag? Select all:</string>
+    <string name="hello">Hello %1$s</string>
+    <string name="submission_time">Submission Time: %1$s</string>
+    <string name="answers_saved">Answers saved!</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="please_select_an_item">Please select an item</string>
+    <string name="app_image_content_description">App image</string>
+    <string name="name">Name:</string>
+    <string name="rudra">Rudra</string>
+    <string name="time">Time:</string>
+    <string name="white">White</string>
+    <string name="yellow">Yellow</string>
+    <string name="orange">Orange</string>
+    <string name="green">Green</string>
+    <string name="next">Next</string>
+    <string name="history">History</string>
+    <string name="sachin_tendulkar">Sachin Tendulkar</string>
+    <string name="virat_kolli">Virat Kolli</string>
+    <string name="adam_gilchirst">Adam Gilchirst</string>
+    <string name="jacques_kallis">Jacques Kallis</string>
+    <string name="here_are_the_answers_selected">Here are the answers selected:</string>
+    <string name="who_is_the_best_cricketer_in_the_world">Who is the best cricketer in the world?</string>
+    <string name="what_are_the_colors_in_the_national_flag">What are the colors in the national flag?</string>
+    <string name="finish">Finish</string>
 </resources>

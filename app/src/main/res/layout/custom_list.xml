@@ -24,21 +24,25 @@
                 android:layout_height="wrap_content"
                 android:padding="8dp"
                 android:orientation="vertical">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Name:"
                     android:layout_gravity="center"
+                    android:text="@string/name"
+                    android:textColor="@color/white"
                     android:textSize="16sp"
-                    android:textColor="@color/white"/>
+                    tools:ignore="TextContrastCheck" />
+
                 <TextView
                     android:id="@+id/nameTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Rudra"
                     android:layout_gravity="center"
+                    android:text="@string/rudra"
+                    android:textColor="@color/white"
                     android:textSize="16sp"
-                    android:textColor="@color/white"/>
+                    tools:ignore="TextContrastCheck" />
 
                 <View
                     android:id="@+id/divider"
@@ -51,9 +55,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="@string/question1"
+                    android:textColor="#FFFFFF"
                     android:textSize="16sp"
-                    android:textColor="@color/white"
-                    android:text="@string/question1" />
+                    tools:ignore="TextContrastCheck" />
                 <TextView
                     android:id="@+id/answer1TextView"
                     android:layout_width="wrap_content"
@@ -71,9 +76,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="16sp"
+                    android:text="@string/question2"
                     android:textColor="@color/white"
-                    android:text="@string/question2"/>
+                    android:textSize="16sp"
+                    tools:ignore="TextContrastCheck" />
 
                 <TextView
                     android:id="@+id/answer2TextView"
@@ -92,9 +98,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="16sp"
+                    android:text="@string/time"
                     android:textColor="@color/white"
-                    android:text="Time: "/>
+                    android:textSize="16sp"
+                    tools:ignore="TextContrastCheck" />
                 <TextView
                     android:id="@+id/timeTextView"
                     android:layout_width="wrap_content"
